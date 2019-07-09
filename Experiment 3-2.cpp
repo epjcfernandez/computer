@@ -2,19 +2,19 @@
 #include <conio.h>
 using namespace std;
 
-const char PROVINCE = 3;
-const int WEEK = 7;
+const char province = 3;
+const int week = 7;
 
 int main()
 {
-    int temperature[PROVINCE][WEEK];
+    int temperature[province][week];
 
     cout << "Enter all temperature for a week of Province A, Province B and then Province C. \n";
 
     
-    for (char n = 0; n < PROVINCE; ++n)
+    for (char n = 0; n < province; ++n)
     {
-        for(int x = 0; x < WEEK; ++x)
+        for(int x = 0; x < week; ++x)
         {
             cout << "PROVINCE " << n + 1 << ", Day " << x + 1 << " : ";
             cin >> temperature[n][x];
@@ -24,15 +24,15 @@ int main()
     cout << "\n\nDisplaying Values:\n";
 
    
-    for (char n = 0; n < PROVINCE; ++n)
+    for (char n = 0; n < province; ++n)
     {
-        for(int x = 0; x < WEEK; ++x)
+        for(int x = 0; x < week; ++x)
         {
             cout << "PROVINCE " << n + 1 << ", Day " << x + 1 << " = " << temperature[n][x] << endl;
         }
     }
 
 
-	  getch();
+	 getch();
     return 0;
 }
